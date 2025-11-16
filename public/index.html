@@ -461,7 +461,7 @@
         }
 
         .materials-grid .card img {
-            width: 100%;
+            width: 120px;
             height: 170px;
             object-fit: cover;
             display: block
@@ -836,13 +836,487 @@
                 height: 140px;
             }
         }
+
+        .logo-card {
+            display: flex;
+            align-items: center;
+            background-color: #C9B59C;
+            padding: 5px 12px;
+            border-radius: 12px;
+            height: 60px;
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .company-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .company-name {
+            margin-left: 10px;
+            font-weight: bold;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Existing media query for mobile */
+        @media screen and (max-width: 768px) {
+            .company-logo {
+                height: 40px;
+                /* smaller logo for mobile */
+            }
+
+            .nav-links a {
+                font-size: 14px;
+                /* optional: make menu items smaller on mobile */
+            }
+
+            /* Hide company name on mobile */
+            .company-name {
+                display: none;
+            }
+        }
+
+        /* ---- Layout ---- */
+        .wrap {
+            max-width: 1200px;
+            margin: 28px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        header.app-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px;
+            background: linear-gradient(180deg, var(--panel), rgba(27, 27, 27, 0.85));
+            border-radius: var(--radius);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(201, 181, 156, 0.12), rgba(255, 255, 255, 0.02));
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--accent);
+            border: 1px solid rgba(201, 181, 156, 0.08);
+        }
+
+        .title {
+            line-height: 1;
+        }
+
+        .title .main {
+            font-weight: 700;
+            font-size: 18px
+        }
+
+        .title .sub {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 2px
+        }
+
+        /* ---- Controls ---- */
+        .controls {
+            margin-left: auto;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .search {
+            background: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            padding: 8px 12px;
+            border-radius: 999px;
+            color: var(--muted);
+            min-width: 180px;
+        }
+
+        .chip {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            padding: 8px 12px;
+            border-radius: 8px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* ---- Sections ---- */
+        .sections {
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+
+        .section {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0.01));
+            border-radius: var(--radius);
+            padding: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.025);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        .section-head {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .section-head .cat-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            display: grid;
+            place-items: center;
+            font-size: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            color: var(--accent);
+        }
+
+        .section-head h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: var(--fw-medium)
+        }
+
+        .section-head p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        /* ---- Cards grid ---- */
+
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            transition: transform .18s ease, box-shadow .18s ease, background .18s;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            cursor: default;
+            height: 400px;
+        }
+
+        .card img {
+            height: 250px;
+            width: 350px;
+            ;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.012), rgba(255, 255, 255, 0.008));
+        }
+
+        .card h4 {
+            margin: 0;
+            font-size: 15px
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.35
+        }
+
+        .card-footer {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* subtle separators for visual grouping */
+        .section+.section {
+            border-top: 1px dashed rgba(255, 255, 255, 0.02);
+            padding-top: 20px;
+        }
+
+        /* responsive tweaks */
+        @media (max-width:720px) {
+            .wrap {
+                padding: 12px;
+                margin: 12px
+            }
+
+            header.app-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px
+            }
+
+            .controls {
+                width: 100%;
+                justify-content: space-between
+            }
+
+            .search {
+                min-width: 120px;
+                width: 60%
+            }
+        }
+
+        /* ---- Updated 3×3 Materials Grid ---- */
+        .grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(3, 1fr);
+            /* ALWAYS 3 columns on desktop */
+            width: 100%;
+        }
+
+        /* Tablet (2 columns) */
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile (1 column) */
+        @media (max-width: 640px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .highlight-section {
+            outline: 3px solid var(--accent);
+            border-radius: 12px;
+            transition: outline 0.8s ease;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            position: relative;
+            background: #fff;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content h2 {
+            margin: 0 0 8px 0;
+        }
+
+        .modal-content p {
+            margin: 0 0 12px 0;
+            text-align: center;
+        }
+
+        .modal-gallery-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modalImage {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .modal-gallery-wrapper button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        #prevBtn {
+            left: 10px;
+        }
+
+        #nextBtn {
+            right: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+  /* Fancy premium glassmorphic section header */
+.fancy-section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 40px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05); /* glass */
+    backdrop-filter: blur(18px); /* glassmorphic blur */
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.fancy-section-title:hover {
+    transform: scale(1.03);
+}
+
+/* Icon wrapper with floating effect */
+.icon-wrapper {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3D cube icon */
+.icon-wrapper .icon {
+    font-size: 36px;
+    background: linear-gradient(135deg, #f7c59f, #c9b59c);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.2) inset;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.icon-wrapper .icon:hover {
+    transform: rotateY(15deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.55), 0 0 25px rgba(255,255,255,0.25) inset;
+}
+
+/* Glossy animated reflection */
+.icon-wrapper .shine {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 50%;
+    height: 200%;
+    background: rgba(255,255,255,0.25);
+    transform: rotate(25deg);
+    filter: blur(15px);
+    animation: shineMove 2.5s infinite;
+    pointer-events: none;
+}
+
+@keyframes shineMove {
+    0% { left: -75%; }
+    100% { left: 125%; }
+}
+
+/* Text */
+.fancy-section-title .text {
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fancy-section-title {
+        flex-direction: column;
+        font-size: 28px;
+        gap: 14px;
+        padding: 18px 24px;
+    }
+    .icon-wrapper {
+        width: 55px;
+        height: 55px;
+    }
+    .icon-wrapper .icon {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+    .fancy-section-title .text {
+        font-size: 28px;
+    }
+}
+
     </style>
 </head>
 
 <body>
 
     <header class="navbar" role="navigation" aria-label="Top navigation">
-        <div class="logo">Build<span>Pro</span></div>
+
+        <div class="logo-card"> <a href="#home" class="logo-link"> <img src="images/PGTLogotransparent.png"
+                    alt="Company Logo" class="company-logo"> <span class="company-name">Palmera General Trading
+                    W.L.L.</span> </a> </div>
 
         <nav class="nav-links" id="primaryNav">
             <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
@@ -972,15 +1446,15 @@
     </section>
 
     <!-- ABOUT US SECTION -->
-    <section class="section about-us" id="about" aria-labelledby="aboutTitle">
-        <h2 id="aboutTitle" class="section-title">About BuildPro Bahrain</h2>
+    <section class="section about-us" id="about" aria-labelledby="aboutTitle" style="margin-top: 20px;">
+        <h2 id="aboutTitle" class="section-title">About Palmera General Trading Bahrain</h2>
 
         <!-- Main About / Company Info -->
         <div class="about-cards" data-aos="fade-up">
             <div class="about-card">
                 <i class="fa-solid fa-hard-hat" style="font-size:36px;color:#C9B59C;"></i>
                 <h3>About Us</h3>
-                <p>BuildPro has been supplying premium construction materials in Bahrain for over 15 years, delivering
+                <p><b>Palmera General Trading</b> has been supplying premium construction materials in Bahrain for over 15 years, delivering
                     steel, wood, concrete, and other building essentials for both residential and commercial projects.
                 </p>
                 <p>Our expertise ensures that every project meets international standards, providing durability,
@@ -1008,7 +1482,7 @@
         <div class="about-extra" data-aos="fade-up" data-aos-delay="150">
             <div class="about-card">
                 <h3>Our Values</h3>
-                <p>Integrity, customer focus, quality, and sustainability guide every decision at BuildPro.</p>
+                <p>Integrity, customer focus, quality, and sustainability guide every decision at Palmera General Trading.</p>
             </div>
             <div class="about-card">
                 <h3>Certifications & Quality</h3>
@@ -1017,7 +1491,7 @@
             </div>
             <div class="about-card">
                 <h3>Why Choose Us?</h3>
-                <p>Reliable supply, competitive pricing, expert advice, and exceptional service make BuildPro the
+                <p>Reliable supply, competitive pricing, expert advice, and exceptional service make Palmera General Trading the
                     preferred choice in Bahrain.</p>
             </div>
         </div>
@@ -1028,12 +1502,20 @@
         </div>
     </section>
     <!-- Materials list (masonry) -->
-    <section class="section" id="materialsSection">
-        <h2 class="section-title">Our Building Materials</h2>
-        <div class="materials-grid" id="materialsCards" aria-live="polite">
-            <p style="text-align:center;color:var(--muted)">Select a category from Materials to view items.</p>
-        </div>
-    </section>
+     <section class="section about-us" id="materials" aria-labelledby="aboutTitle" style="margin-top: 20px;">
+      <h2 id="materialsTitle" class="fancy-section-title">
+  <span class="icon-wrapper">
+    <span class="icon">🧱</span>
+    <span class="shine"></span>
+  </span>
+  <span class="text">Materials</span>
+</h2>
+
+
+<div class="sections" id="sectionsRoot" style="margin-top: 20px;">
+        <!-- Sections injected here -->
+    </div>
+     </section>    
 
     <!-- Modal -->
     <div id="quoteModal" class="quote-modal" aria-modal="true" aria-hidden="true" style="display:none;">
@@ -1066,7 +1548,19 @@
             </form>
         </div>
     </div>
+    <div id="materialModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="modalClose">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
 
+            <div class="modal-gallery-wrapper">
+                <button id="prevBtn">&#10094;</button>
+                <img id="modalImage" src="" alt="">
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
 
     <!-- AOS Animation Library (optional for smooth fade-in scroll) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -1089,7 +1583,7 @@
             const desktopItems = Array.from(document.querySelectorAll('.desktop-item'));
             const materialsCards = document.getElementById('materialsCards');
 
-            // Data
+            // CATEGORY DATA
             const categories = [
                 { key: 'steel', icon: '🔩', title: 'Steel', desc: 'Rebars, sheets & sections' },
                 { key: 'wood', icon: '🌲', title: 'Wood', desc: 'Timber & plywood' },
@@ -1099,33 +1593,147 @@
                 { key: 'other', icon: '⚙️', title: 'Other', desc: 'Tools, paints & fixings' }
             ];
 
+            // MATERIALS WITH IMAGES
             const materialsData = {
                 steel: [
-                    { title: 'Rebars (TMT)', desc: 'High strength rebar for structural work.' },
-                    { title: 'I-beams', desc: 'Structural beams and channels.' },
-                    { title: 'Sheets & Plates', desc: 'Galvanized and cold-rolled sheets.' }
+                    { title: 'Rebars (TMT)', desc: 'High strength rebar for structural work.', imgs: ['images/rebars.jfif', 'images/steels.jpg'] },
+                    { title: 'I-beams', desc: 'Structural beams and channels.', imgs: ['images/ibeams.png'] },
+                    { title: 'Sheets & Plates', desc: 'Galvanized and cold-rolled sheets.', imgs: ['images/sheets.jpg'] }
                 ],
                 wood: [
-                    { title: 'Timber', desc: 'Hardwood and softwood timber.' },
-                    { title: 'Plywood', desc: 'Formwork and finish plywood.' }
+                    { title: 'Timber', desc: 'Hardwood and softwood timber.', imgs: ['images/timber.jpg'] },
+                    { title: 'Plywood', desc: 'Formwork & finishing plywood.', imgs: ['images/plywood.jpg'] }
                 ],
                 blocks: [
-                    { title: 'Hollow Blocks', desc: 'Lightweight & insulated.' },
-                    { title: 'Solid Blocks', desc: 'High strength units.' }
+                    { title: 'Hollow Blocks', desc: 'Lightweight & insulated.', imgs: ['images/blocks.jpg'] },
+                    { title: 'Solid Blocks', desc: 'High strength solid blocks.', imgs: ['images/solidblock.jpg'] }
                 ],
                 concrete: [
-                    { title: 'Ready-Mix', desc: 'Delivered on-site.' },
-                    { title: 'Sand & Aggregates', desc: 'Fine/coarse sand and gravels.' }
+                    { title: 'Ready-Mix', desc: 'Delivered on-site.', imgs: ['images/ReadyMixConcrete.jpg'] },
+                    { title: 'Sand & Aggregates', desc: 'Fine/coarse sand & gravel.', imgs: ['images/sandaggergates.jpeg'] }
                 ],
                 mortars: [
-                    { title: 'Mortar Mixes', desc: 'Pre-mixed for masonry work.' },
-                    { title: 'Admixtures', desc: 'Waterproofing and performance enhancers.' }
+                    { title: 'Mortar Mixes', desc: 'Pre-mixed masonry mortar.', imgs: ['images/mortar.png'] },
+                    { title: 'Admixtures', desc: 'Performance-enhancing chemicals.', imgs: ['images/Admixtures.png'] }
                 ],
                 other: [
-                    { title: 'Paints & Coatings', desc: 'Protective and decorative paints.' },
-                    { title: 'Tools & Hardware', desc: 'Fasteners, hand tools & safety gear.' }
+                    { title: 'Paints & Coatings', desc: 'Decorative / protective paints.', imgs: ['images/paint.jpg'] },
+                    { title: 'Tools & Hardware', desc: 'Tools, fasteners, safety items.', imgs: ['images/tools.jpg'] }
                 ]
             };
+
+            // RENDER SECTIONS
+            const sectionsRoot = document.getElementById('sectionsRoot');
+
+            function createSection(category) {
+                const sec = document.createElement('section');
+                sec.className = 'section';
+                sec.dataset.key = category.key;   // 🔥 IMPORTANT FIX
+
+                sec.innerHTML = `
+        <div class="section-head">
+            <div class="cat-icon">${category.icon}</div>
+            <div>
+                <h3>${category.title}</h3>
+                <p>${category.desc}</p>
+            </div>
+        </div>
+        <div class="grid"></div>
+    `;
+
+                const grid = sec.querySelector('.grid');
+                const items = materialsData[category.key];
+
+                items.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.onclick = () => openModal(item);
+
+                    card.innerHTML = `
+            <img src="${item.imgs[0]}" alt="${item.title}">
+            <h4>${item.title}</h4>
+            <p>${item.desc}</p>
+        `;
+                    grid.appendChild(card);
+                });
+
+                return sec;
+            }
+
+            function renderAll() {
+                sectionsRoot.innerHTML = "";
+                categories.forEach(cat => sectionsRoot.appendChild(createSection(cat)));
+            }
+
+            renderAll();
+            let currentImages = [];
+            let currentIndex = 0;
+
+            // Open modal
+            function openModal(item) {
+                document.getElementById("modalTitle").textContent = item.title;
+                document.getElementById("modalDesc").textContent = item.desc;
+
+                currentImages = item.imgs;
+                currentIndex = 0;
+                updateModalImage();
+
+                document.getElementById("materialModal").style.display = "flex";
+            }
+
+            // Update displayed image
+            function updateModalImage() {
+                document.getElementById("modalImage").src = currentImages[currentIndex];
+            }
+
+            // Next / Prev buttons
+            function prevImage() {
+                if (!currentImages.length) return;
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                updateModalImage();
+            }
+
+            function nextImage() {
+                if (!currentImages.length) return;
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                updateModalImage();
+            }
+
+            // Close modal
+            function closeModal() {
+                document.getElementById("materialModal").style.display = "none";
+            }
+
+            // Attach button events AFTER DOM is loaded
+            document.addEventListener("DOMContentLoaded", () => {
+                document.getElementById("prevBtn").addEventListener("click", prevImage);
+                document.getElementById("nextBtn").addEventListener("click", nextImage);
+                document.getElementById("modalClose").addEventListener("click", closeModal);
+
+                window.addEventListener("click", e => {
+                    if (e.target.id === "materialModal") closeModal();
+                });
+            });
+
+            // -----------------------------
+            // MENU → SCROLL TO SECTION
+            // -----------------------------
+            document.querySelectorAll('.desktop-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const catKey = item.dataset.cat;
+                    const targetSection = document.querySelector(`section[data-key="${catKey}"]`);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+                        targetSection.classList.add("highlight-section");
+                        setTimeout(() => targetSection.classList.remove("highlight-section"), 1500);
+                    }
+
+                    document.getElementById("desktopDropdown").setAttribute("aria-hidden", "true");
+                });
+            });
+
 
             /* Helpers */
             function clearChildren(el) { while (el.firstChild) el.removeChild(el.firstChild); }
@@ -1176,9 +1784,6 @@
             /* Desktop item click -> populate page grid */
             desktopItems.forEach(item => {
                 item.addEventListener('click', () => {
-                    const cat = item.getAttribute('data-cat');
-                    if (!cat) return;
-                    populateMaterials(cat);
                     desktopDropdown.style.display = 'none';
                     materialsDesktopBtn.setAttribute('aria-expanded', 'false');
                     desktopDropdown.setAttribute('aria-hidden', 'true');
@@ -1191,29 +1796,6 @@
                     }
                 });
             });
-
-            function populateMaterials(category) {
-                const list = materialsData[category] || [];
-                clearChildren(materialsCards);
-                if (list.length === 0) {
-                    const p = document.createElement('p');
-                    p.style.textAlign = 'center'; p.style.color = 'var(--muted)';
-                    p.textContent = 'No items.';
-                    materialsCards.appendChild(p);
-                    return;
-                }
-                // populate masonry cards (images are placeholders)
-                list.forEach(it => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    // use different placeholder sizes to make masonry feel natural
-                    const randH = 140 + Math.floor(Math.random() * 80);
-                    const imgUrl = `images/${encodeURIComponent(it.title)}.jpg`;
-                    card.innerHTML = `<img src="${imgUrl}" alt="${it.title}"><h3>${it.title}</h3><p>${it.desc}</p>`;
-                    card.setAttribute('tabindex', '0');
-                    materialsCards.appendChild(card);
-                });
-            }
 
             /* Mobile: Hamburger / Slide menu */
             const openMobileMenu = document.getElementById('hamburger');
@@ -1237,7 +1819,6 @@
                     btn.dataset.cat = cat.key;
                     btn.addEventListener('click', (ev) => {
                         ev.stopPropagation();
-                        populateMaterials(cat.key);
                         closeOverlayFn();
                         mobileMenu.classList.remove('open');
                     });

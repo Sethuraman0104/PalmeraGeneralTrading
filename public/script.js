@@ -29,7 +29,7 @@ AOS.init({ duration: 800, once: true });
             const materialsData = {
                 steel: [
                     {
-                        title: 'Rebars (TMT)', desc: 'High strength rebar for structural work.', imgs: ['images/rebars.jfif', 'images/steels.jpg'], features: [
+                        title: 'Rebars (TMT)', desc: 'High strength rebar for structural work.', imgs: ['images/rebarsallsizes.jfif', 'images/rebars.jfif', 'images/rebars1.jfif', 'images/rebars2.png', 'images/rebars3.jpeg'], features: [
                             'Thermo-Mechanically Treated for strength & flexibility',
                             'Ideal for beams, columns, slabs, foundations',
                             'Corrosion-resistant and durable',
@@ -39,23 +39,23 @@ AOS.init({ duration: 800, once: true });
                         ]
                     },
                     {
-                        title: 'I-beams', desc: 'Structural beams and channels.', imgs: ['images/ibeams.png'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                        title: 'I-beams', desc: 'Structural beams and channels.', imgs: ['images/ibeams.png','images/ibeams1.jpeg', 'images/ibeams2.jfif'], features: [
+                            'High load-bearing capacity for major structural frameworks',
+                            'Ideal for columns, rafters, bridges, and support structures',
+                            'Designed for maximum stiffness with minimal weight',
+                            'Uniform flange thickness ensures stability and balance',
+                            'Excellent resistance to bending and shear forces',
+                            'Suitable for commercial, industrial, and heavy-duty applications'
                         ]
                     },
                     {
-                        title: 'Sheets & Plates', desc: 'Galvanized and cold-rolled sheets.', imgs: ['images/sheets.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                        title: 'Sheets & Plates', desc: 'Galvanized and cold-rolled sheets.', imgs: ['images/sheets.jpg','images/sheets1.jpg'], features: [
+                            'Smooth, uniform surface finish with high dimensional accuracy',
+                            'Corrosion-resistant galvanized coating for long life',
+                            'Excellent formability for bending, cutting, and fabrication',
+                            'High strength and durability for structural and industrial use',
+                            'Suitable for HVAC, ducting, panels, enclosures, and roofing',
+                            'Ideal for automotive, construction, and general engineering applications'
                         ]
                     }
                 ],
@@ -64,24 +64,24 @@ AOS.init({ duration: 800, once: true });
                         title: 'Timber',
                         desc: 'Hardwood and softwood timber.',
                         imgs: ['images/woods.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'High-quality hardwood and softwood options',
+                            'Strong, durable, and naturally long-lasting',
+                            'Ideal for carpentry, furniture, and joinery',
+                            'Uniform grain and smooth finish for premium appearance',
+                            'Resistant to warping and cracking when properly treated',
+                            'Suitable for construction, interior works, and outdoor applications'
                         ]
                     },
                     {
                         title: 'Plywood',
                         desc: 'Formwork & finishing plywood.',
                         imgs: ['images/plywood.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'High-strength engineered wood panels',
+                            'Smooth, uniform surface ideal for interior work',
+                            'Resistant to bending, cracking, and warping',
+                            'Lightweight yet durable for easy handling',
+                            'Suitable for furniture, cabinets, and wall paneling',
+                            'Available in multiple thicknesses and grades'
                         ]
                     },
                     {
@@ -116,12 +116,13 @@ AOS.init({ duration: 800, once: true });
                             'images/wood27.jpg',
                             'images/wood28.jpg',
                             'images/wood29.jpg'], features: [
-                                'Thermo-Mechanically Treated for strength & flexibility',
-                                'Ideal for beams, columns, slabs, foundations',
-                                'Corrosion-resistant and durable',
-                                'Meets international quality standards',
-                                'Ensures strong bonding with concrete',
-                                'Suitable for residential, commercial, industrial projects'
+                                'Strong, durable construction for heavy loads',
+                                'Ideal for storage, handling, and transport',
+                                'Smooth finish with minimal splinters',
+                                'Supports forklifts and pallet jacks easily',
+                                'Available in standard and custom dimensions',
+                                'Suitable for warehouses, logistics, and shipping',
+                                'Eco-friendly and reusable material'
                             ]
                     }
                 ]
@@ -129,22 +130,24 @@ AOS.init({ duration: 800, once: true });
                 blocks: [
                     {
                         title: 'Hollow Blocks', desc: 'Lightweight & insulated.', imgs: ['images/blocks.jpg', 'images/hollowblock1.jfif'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Lightweight structure for easy handling',
+                            'Excellent thermal and sound insulation',
+                            'Provides strong load-bearing performance',
+                            'Ensures faster and cost-efficient construction',
+                            'Reduces overall dead load on buildings',
+                            'Uniform shape for clean alignment and finishing',
+                            'Suitable for walls, partitions, and large projects'
                         ]
                     },
                     {
                         title: 'Solid Blocks', desc: 'High strength solid blocks.', imgs: ['images/solidblock.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'High compressive strength for load-bearing structures',
+                            'Durable and long-lasting under harsh conditions',
+                            'Excellent fire resistance',
+                            'Provides superior acoustic insulation',
+                            'Minimizes gaps and improves structural stability',
+                            'Ideal for foundations, boundary walls, and heavy-duty construction',
+                            'Uniform shape ensures clean finishing and alignment'
                         ]
                     },
                     {
@@ -153,114 +156,124 @@ AOS.init({ duration: 800, once: true });
                         imgs: [
                             'images/ConcreteBlocksSet.jpg'
                         ], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Combination of <b>hollow and solid blocks</b> for versatile construction',
+                            'Suitable for both <b>load-bearing and non-load-bearing</b> walls',
+                            'Provides excellent <b>thermal and sound insulation</b>',
+                            'Uniform size ensures clean alignment and faster installation',
+                            'Durable and designed for long-term structural performance',
+                            'Reduces construction time and overall material wastage',
+                            'Ideal for residential, commercial, and industrial projects'
                         ]
                     }
                 ],
                 concrete: [
                     {
                         title: 'Ready-Mix', desc: 'Delivered on-site.', imgs: ['images/ReadyMixConcrete.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Consistent, factory-controlled concrete mix',
+                            'Delivered directly to the site for fast execution',
+                            'Ensures uniform quality across the entire project',
+                            'Saves time by eliminating on-site mixing',
+                            'Improves work efficiency and reduces labor cost',
+                            'Available in multiple grades for different structural needs',
+                            'Ideal for foundations, slabs, columns, and large pours'
                         ]
                     },
                     {
                         title: 'Sand & Aggregates', desc: 'Fine/coarse sand & gravel.', imgs: ['images/sandaggergates.jpeg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'High-quality <b>fine and coarse sand</b> for construction',
+                            'Durable <b>gravel aggregates</b> for concrete strength',
+                            'Clean, well-graded materials for better bonding',
+                            'Suitable for plastering, block work, and concrete mixes',
+                            'Ensures strong and stable structural performance',
+                            'Available in different sizes based on project needs',
+                            'Ideal for residential, commercial, and infrastructure works'
                         ]
                     }
                 ],
                 mortars: [
                     {
                         title: 'Mortar Mixes', desc: 'Pre-mixed masonry mortar.', imgs: ['images/mortar.png'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Pre-mixed for consistent quality and performance',
+                            'Ready-to-use, saving time and labor on site',
+                            'Strong bonding for masonry and brickwork',
+                            'Smooth texture for easy application and finishing',
+                            'Durable and resistant to cracking over time',
+                            'Suitable for residential, commercial, and industrial projects',
+                            'Compatible with various construction materials'
                         ]
                     },
                     {
                         title: 'Admixtures', desc: 'Performance-enhancing chemicals.', imgs: ['images/Admixtures.png'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Enhances concrete performance and durability',
+                            'Improves workability and flow of mixes',
+                            'Reduces water content while maintaining strength',
+                            'Accelerates or retards setting time as required',
+                            'Improves resistance to weathering and chemical attack',
+                            'Suitable for all types of concrete and mortar applications',
+                            'Ideal for residential, commercial, and industrial construction'
                         ]
                     },
                     {
                         title: 'Mortar Set',
                         desc: 'Includes various mortar mixes and admixtures for construction.',
                         imgs: ['images/MortarSet.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Includes a variety of pre-mixed mortars and admixtures',
+                            'Ready-to-use for masonry, plastering, and finishing works',
+                            'Ensures consistent quality across all applications',
+                            'Saves time and reduces on-site preparation',
+                            'Durable and suitable for different construction environments',
+                            'Compatible with a wide range of building materials',
+                            'Ideal for residential, commercial, and industrial projects'
                         ]
                     },
                     {
                         title: 'Mortar Pan',
                         desc: 'Used for mixing mortar on site.',
                         imgs: ['images/mortarpan.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Durable pan for efficient on-site mortar mixing',
+                            'Made from high-quality, corrosion-resistant materials',
+                            'Large capacity suitable for small to medium batches',
+                            'Lightweight and easy to transport around the site',
+                            'Smooth surface ensures easy cleaning after use',
+                            'Helps maintain consistent mortar quality',
+                            'Ideal for residential, commercial, and industrial projects'
                         ]
                     },
                     {
                         title: 'Trowels',
                         desc: 'Hand tools for spreading and finishing mortar.',
                         imgs: ['images/Trowels.jpg', 'images/Trowels1.jfif', 'images/Trowels2.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Ergonomic hand tools for precise mortar spreading',
+                            'Durable blades for smooth finishing of walls and surfaces',
+                            'Lightweight design for easy handling on-site',
+                            'Ideal for plastering, masonry, and tiling works',
+                            'Ensures consistent thickness and even application',
+                            'Comfortable grip reduces hand fatigue during prolonged use',
+                            'Suitable for residential, commercial, and industrial projects'
                         ]
                     }
                 ],
                 other: [
                     {
                         title: 'Paints & Coatings', desc: 'Decorative / protective paints.', imgs: ['images/paint.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'High-quality decorative and protective finishes',
+                            'Smooth application with excellent coverage',
+                            'Resistant to weathering, fading, and cracking',
+                            'Available in a wide range of colors and textures',
+                            'Enhances durability of walls, ceilings, and structures',
+                            'Quick-drying formulas for efficient project completion',
+                            'Suitable for residential, commercial, and industrial projects'
                         ]
                     },
                     {
                         title: 'Tools & Hardware', desc: 'Tools, fasteners, safety items.', imgs: ['images/tools.jpg'], features: [
-                            'Thermo-Mechanically Treated for strength & flexibility',
-                            'Ideal for beams, columns, slabs, foundations',
-                            'Corrosion-resistant and durable',
-                            'Meets international quality standards',
-                            'Ensures strong bonding with concrete',
-                            'Suitable for residential, commercial, industrial projects'
+                            'Wide range of construction and hand tools',
+                            'Includes fasteners, nails, screws, and anchors',
+                            'High-quality materials for durability and reliability',
+                            'Safety equipment for personal protection on site',
+                            'Designed for efficiency and ease of use',
+                            'Suitable for residential, commercial, and industrial projects',
+                            'Essential for completing construction and finishing works'
                         ]
                     }
                 ]
@@ -278,7 +291,7 @@ AOS.init({ duration: 800, once: true });
         <div class="section-head">
             <div class="cat-icon">${category.icon}</div>
             <div>
-                <h3>${category.title}</h3>
+                <h2>${category.title}</h2>
                 <p>${category.desc}</p>
             </div>
         </div>

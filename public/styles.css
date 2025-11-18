@@ -1665,3 +1665,68 @@
             display: inline-block;
             font-size: 14px;
         }
+
+      /* Hide logo on desktop */
+.mobile-menu-logo {
+    display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    /* Show logo rectangle */
+    .mobile-menu-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;  /* White rectangle */
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 8px;         /* Optional rounded corners */
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Optional shadow */
+    }
+
+    .mobile-menu-logo img {
+        height: 50px;   /* Adjust size */
+        width: auto;
+        object-fit: contain;
+    }
+
+    /* Remove any header text inside nav on mobile */
+    nav.mobile-menu h1,
+    nav.mobile-menu .header-text {
+        display: none;
+    }
+
+    /* Menu links adjustments */
+    .mobile-menu a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+}
+
+/* Hide footer on desktop */
+.mobile-menu-footer {
+    display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .mobile-menu-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 12px;
+        color: #555;
+        margin-top: 20px;
+        border-top: 1px solid rgba(0,0,0,0.1); /* Optional separator */
+    }
+
+    .mobile-menu-footer p {
+        margin: 2px 0;
+    }
+}

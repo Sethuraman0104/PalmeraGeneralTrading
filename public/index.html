@@ -17,7 +17,9 @@
 <body>
     <header class="navbar" role="navigation" aria-label="Top navigation">
         <div class="logo-card"> <a href="#home" class="logo-link"> <img src="images/PGTLogotransparent.png"
-                    alt="Company Logo" class="company-logo"> <span class="company-name"><b style="color: #c41124;">P</b>almera <b style="color: #c41124;">G</b>eneral <b style="color: #c41124;">T</b>rading
+                    alt="Company Logo" class="company-logo"> <span class="company-name"><b
+                        style="color: #c41124;">P</b>almera <b style="color: #c41124;">G</b>eneral <b
+                        style="color: #c41124;">T</b>rading
                     W.L.L</span> </a> </div>
 
         <nav class="nav-links" id="primaryNav">
@@ -86,12 +88,34 @@
     </header>
 
     <!-- MOBILE MENU -->
-    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <!-- <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
         <a href="#" id="mobileMaterialsBtn"><i class="fa-solid fa-cubes"></i> Materials</a>
         <a href="#services-overview"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
         <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
         <a href="#contact"><i class="fa-solid fa-headset"></i> Contact</a>
+    </nav> -->
+
+    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <!-- Mobile logo -->
+        <div class="mobile-menu-logo">
+            <a href="#home">
+                <img src="images/PGTLogotransparent.png" alt="Company Logo">
+            </a>
+        </div>
+
+        <!-- Menu links -->
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" id="mobileMaterialsBtn"><i class="fa-solid fa-cubes"></i> Materials</a>
+        <a href="#services-overview"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+        <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="#contact"><i class="fa-solid fa-headset"></i> Contact</a>
+
+        <!-- Mobile Footer -->
+        <div class="mobile-menu-footer">
+            <p>© 2025 Palmera General Trading</p>
+            <p>Created by HR Info</p>
+        </div>
     </nav>
 
     <!-- mobile overlay (Apple-style) -->
@@ -106,42 +130,52 @@
         </div>
     </div>
 
-    <!-- HERO -->
-    <!-- HERO SLIDER -->
     <section class="hero-slider" id="home">
         <div class="slides">
-            <!-- Slide 1 -->
-            <div class="slide active" style="background-image:url('images/steels.jpg');">
+            <div class="slide active" style="background-image:url('images/RCTCard.png');">
                 <div class="hero-content glass-card">
-                    <h1>Premium <span>Steel Solutions</span></h1>
-                    <p>High-grade rebars, beams and sheets for industrial projects.</p>
+                    <h1>Palmera <span>General Trading</span></h1>
+                    <p>Your trusted partner for high-quality construction materials and dependable supply services.</p>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide" style="background-image:url('images/concrete.jpg');">
+            <div class="slide" style="background-image:url('images/RebarsCard.png');">
                 <div class="hero-content glass-card">
-                    <h1>Strong <span>Concrete Supply</span></h1>
-                    <p>Ready-mix, aggregates, and reliable site delivery.</p>
+                    <h1>Premium <span>Reinforced Steel Bars</span></h1>
+                    <p>High-strength rebars and steel mesh engineered for reliable structural performance.</p>
                 </div>
             </div>
 
-            <!-- Slide 3 -->
-            <div class="slide" style="background-image:url('images/woods.jpg');">
+            <div class="slide" style="background-image:url('images/AUSTRIANWoodCard.png');">
                 <div class="hero-content glass-card">
-                    <h1>Quality <span>Wood & Timber</span></h1>
-                    <p>Plywood, timber and construction-grade wood products.</p>
+                    <h1>Quality <span>Austrian White Wood</span></h1>
+                    <p>Durable, premium-grade timber ideal for formwork, framing, and professional carpentry.</p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image:url('images/MarineplywoodCard.png');">
+                <div class="hero-content glass-card">
+                    <h1>High-Grade <span>Marine Plywood</span></h1>
+                    <p>Water-resistant plywood designed for tough environments with long-lasting durability.</p>
+                </div>
+            </div>
+
+            <div class="slide" style="background-image:url('images/HardwareSuppliesCard.png');">
+                <div class="hero-content glass-card">
+                    <h1>Essential <span>Hardware & Safety Supplies</span></h1>
+                    <p>Reliable tools, protective gear, and site essentials ensuring safety and efficiency.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Slide Indicators -->
         <div class="slider-dots" id="sliderDots"></div>
     </section>
 
+
     <!-- ABOUT US SECTION -->
     <section class="section about-us" id="about" aria-labelledby="aboutTitle" style="margin-top: 20px;">
-        <h2 id="aboutTitle" class="section-title">About <b style="color: #c41124;">Palmera General Trading</b> Bahrain</h2>
+        <h2 id="aboutTitle" class="section-title">About <b style="color: #c41124;">P</b>almera <b
+                style="color: #c41124;">G</b>eneral <b style="color: #c41124;">T</b>rading Bahrain</h2>
 
         <!-- Main About / Company Info -->
         <div class="about-cards" data-aos="fade-up">
@@ -380,4 +414,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

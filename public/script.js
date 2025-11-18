@@ -14,8 +14,7 @@ AOS.init({ duration: 800, once: true });
 
     const desktopItems = Array.from(document.querySelectorAll('.desktop-item'));
     const materialsCards = document.getElementById('materialsCards');
-
-    // CATEGORY DATA
+    
     // CATEGORY DATA
     const categories = [
         { key: 'steel', icon: '🔩', title: 'Reinforced Steel', desc: 'Steel bars, meshes & commercial steel' },
@@ -25,11 +24,8 @@ AOS.init({ duration: 800, once: true });
         { key: 'mortars', icon: '🧴', title: 'Mortars & Admixtures', desc: 'Mortar mixes, admixtures & tools' },
         { key: 'other', icon: '⚙️', title: 'Hardware & Tools', desc: 'Safety, tools, nails, cables & accessories' }
     ];
-
-
     // MATERIALS WITH IMAGES
     const materialsData = {
-
         // ============================================================
         // 🔩 STEEL CATEGORY
         // ============================================================
@@ -441,24 +437,7 @@ AOS.init({ duration: 800, once: true });
         });
 
         return sec;
-    }
-
-    // ------------------------------
-    // MATERIALS SEARCH FILTER
-    // ------------------------------
-    const searchBox = document.getElementById("materialSearch");
-
-    if (searchBox) {
-        searchBox.addEventListener("input", function () {
-            const term = this.value.toLowerCase().trim();
-            const allSections = document.querySelectorAll("#sectionsRoot .section-block");
-
-            allSections.forEach(block => {
-                const txt = block.innerText.toLowerCase();
-                block.style.display = txt.includes(term) ? "block" : "none";
-            });
-        });
-    }
+    }    
 
     function renderAll() {
         sectionsRoot.innerHTML = "";
@@ -533,7 +512,6 @@ AOS.init({ duration: 800, once: true });
             document.getElementById("desktopDropdown").setAttribute("aria-hidden", "true");
         });
     });
-
 
     /* Helpers */
     function clearChildren(el) { while (el.firstChild) el.removeChild(el.firstChild); }
@@ -761,4 +739,45 @@ AOS.init({ duration: 800, once: true });
     }
 
     setInterval(autoSlide, 4800);
+
+    // Catalog Modal Logic
+const catalogBtn = document.getElementById("catalogBtn");
+const mobileCatalogBtn = document.getElementById("mobileCatalogBtn");
+const catalogModal = document.getElementById("catalogModal");
+const catalogClose = document.getElementById("catalogClose");
+
+// Open modal
+function openCatalog() {
+    catalogModal.style.display = "flex";
+}
+
+// Close modal
+function closeCatalog() {
+    catalogModal.style.display = "none";
+}
+
+// Desktop click
+if (catalogBtn) catalogBtn.addEventListener("click", openCatalog);
+
+// Mobile click
+if (mobileCatalogBtn) mobileCatalogBtn.addEventListener("click", openCatalog);
+
+// Close button
+catalogClose.addEventListener("click", closeCatalog);
+
+// Close if clicking outside frame
+catalogModal.addEventListener("click", function(e) {
+    if (e.target === catalogModal) closeCatalog();
+});
+
+document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("close-modal") || e.target.classList.contains("modal")) {
+        closeCatalogModal();
+    }
+});
+
+function closeCatalogModal() {
+    document.getElementById("catalogModal").style.display = "none";
+}
+
 })();

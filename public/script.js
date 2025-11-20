@@ -579,6 +579,7 @@ AOS.init({ duration: 800, once: true });
     const openMobileMenu = document.getElementById('hamburger');
     openMobileMenu.addEventListener('click', (e) => {
         e.stopPropagation();
+        mobileMenu.style.display='block';
         mobileMenu.classList.toggle('open');
     });
     // close mobile menu on outside click

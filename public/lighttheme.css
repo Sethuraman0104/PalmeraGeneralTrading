@@ -2,22 +2,22 @@
        Gunmetal Steel : variables
        --------------------------- */
  :root {
-     --bg-900: #121315;
+     --bg-900: #FFE8CD;
      /* deepest background */
-     --bg-800: #1f2123;
-     --panel: #2b2d2f;
+     --bg-800: #FFD6BA;
+     --panel: #FFDCDC;
      /* gunmetal panel */
-     --metal-1: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+     /* --metal-1: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)); */
      --muted: #B6BDC4;
      --accent: #c8cdd2;
      /* bright metal highlight */
      --accent-2: #9ea6ad;
      /* secondary highlight */
-     --card: #222427;
-     --glass: rgba(255, 255, 255, 0.04);
-     --glass-strong: rgba(255, 255, 255, 0.06);
-     --glass-border: rgba(255, 255, 255, 0.06);
-     --glass-shadow: 0 8px 30px rgba(2, 3, 4, 0.6);
+     --card: #333446;
+     --glass: #FFF2EB;
+     --glass-strong: #FFF2EB;
+     --glass-border: #FFF2EB;
+     --glass-shadow: 0 8px 30px #FFF2EB;
      --radius: 14px;
  }
 
@@ -36,7 +36,7 @@
  body {
      font-family: "Segoe UI", system-ui, Arial, sans-serif;
      background:
-         radial-gradient(1200px 400px at 10% 10%, rgba(255, 255, 255, 0.02), transparent 8%),
+         radial-gradient(1200px 400px at 10% 10%, #FFF2EB, transparent 8%),
          var(--bg-900);
      color: var(--accent);
      -webkit-font-smoothing: antialiased;
@@ -56,7 +56,7 @@
      left: 0;
      right: 0;
      height: 72px;
-     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06));
+     /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.06)); */
      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
      display: flex;
      align-items: center;
@@ -64,7 +64,7 @@
      padding: 0 20px;
      z-index: 1200;
      backdrop-filter: blur(6px);
-     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+     /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6); */
  }
 
  .nav-links {
@@ -75,7 +75,7 @@
 
  .nav-links a,
  .nav-links button {
-     color: var(--accent);
+     color: #0E2148;
      background: transparent;
      border: 0;
      padding: 8px 12px;
@@ -97,7 +97,7 @@
  .nav-links a:hover,
  .nav-links button:hover {
      transform: translateY(-4px);
-     color: #ffffff;
+     color: #333446;
      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.02);
  }
 
@@ -121,7 +121,7 @@
      position: absolute;
      top: 76px;
      right: 0;
-     background: #0f0f0f;
+     background: #FFDCDC;
      /* dark solid dropdown bg */
      padding: 14px;
      border-radius: 12px;
@@ -130,7 +130,7 @@
      max-width: calc(100vw - 24px);
      max-height: 460px;
      overflow: auto;
-     border: 1px solid #2b2b2b;
+     border: 1px solid #FFD6BA;
      z-index: 2000;
  }
 
@@ -151,12 +151,12 @@
 
  /* --- Material Item Card (Equal Size Cards) --- */
  .desktop-item {
-     background: #222;
+     background: #FFF2EB;
      /* solid dark steel */
      border-radius: 14px;
      padding: 22px;
-     color: #fff !important;
-     border: 1px solid #3a3a3a;
+     color: #0E2148 !important;
+     border: 1px solid #333446;
 
      /* 🔥 All items same width + height */
      min-height: 160px;
@@ -178,7 +178,7 @@
 
  /* Headings */
  .desktop-item h4 {
-     color: #ffffff;
+     color: #333446;
      font-weight: 600;
      margin: 8px 0 4px;
      font-size: 1.05rem;
@@ -186,7 +186,7 @@
 
  /* Description */
  .desktop-item p {
-     color: #dcdcdc;
+     color: #333446;
      font-size: 0.9rem;
      margin-top: auto;
      /* pushes text neatly */
@@ -207,7 +207,7 @@
      }
 
      .desktop-item:hover {
-         background: #2e2e2e;
+         background: #FFE8CD;
          /* slight lift color */
          border-color: #555;
          transform: translateY(-6px);
@@ -631,14 +631,14 @@
  .desktop-item:focus,
  .overlay-card:focus,
  .materials-grid .card:focus {
-     outline: 2px solid rgba(158, 166, 173, 0.12);
+     outline: 2px solid #FFD6BA;
      outline-offset: 4px
  }
 
  .about-us {
      padding: 60px 18px;
-     background: linear-gradient(180deg, #111 0%, #0b0b0b 100%);
-     color: #eee;
+     background: #FFD6BA;
+     color: #0E2148;
  }
 
  .about-us .section-title {
@@ -658,7 +658,7 @@
  }
 
  .about-card {
-     background: #151515;
+     background: #FFF2EB;
      border-radius: 14px;
      overflow: hidden;
      text-align: center;
@@ -677,12 +677,12 @@
 
  .about-card h3 {
      margin: 12px 8px 6px;
-     color: #C9B59C;
+     color: #0E2148;
  }
 
  .about-card p {
      font-size: 0.9rem;
-     color: #aaa;
+     color: #333446;
      margin: 0 8px 12px;
  }
 
@@ -850,7 +850,7 @@
      place-items: center;
      font-size: 24px;
      border: 1px solid rgba(255, 255, 255, 0.03);
-     color: var(--accent);
+     color: #0E2148;
  }
 
  .section-head h3 {
@@ -861,7 +861,7 @@
 
  .section-head p {
      margin: 0;
-     color: var(--muted);
+     color: #0E2148;
      font-size: 13px
  }
 
@@ -878,7 +878,7 @@
 
  /* ---- Card ---- */
  .card {
-     background: linear-gradient(145deg, #111, #1a1a1a);
+     background: #FFD6BA;
      border-radius: 16px;
      padding: 16px;
      border: 1px solid rgba(255, 255, 255, 0.05);
@@ -899,7 +899,7 @@
  /* ---- Hover Effect ---- */
  .card:hover {
      transform: translateY(-6px) scale(1.03);
-     background: linear-gradient(135deg, #222, #000);
+     background: linear-gradient(135deg, #FFF2EB, #FFF2EB);
      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
  }
 
@@ -920,13 +920,13 @@
  .card h4 {
      margin: 6px 0;
      font-size: 16px;
-     color: #fff;
+     color: #332D56;
  }
 
  .card p {
      margin: 0;
      font-size: 14px;
-     color: #ccc;
+     color: #4E6688;
  }
 
  /* ---- Features List ---- */
@@ -984,7 +984,7 @@
 
  /* Each bullet point styling */
  .card-features li {
-     color: #f0a45f;
+     color: #0E2148;
      font-size: 13px;
      padding: 4px 6px;
      border-radius: 6px;
@@ -1001,7 +1001,7 @@
  .card:hover .card-features li:hover {
      background: rgba(255, 255, 255, 0.1);
      /* highlight on hover */
-     color: #fff;
+     color: #333446;
      transform: translateX(4px);
      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
  }
@@ -1295,6 +1295,7 @@
      background: linear-gradient(to right, #f5f5f5, #e0e0e0);
      font-family: 'Arial', sans-serif;
      color: #222;
+     margin-top: 20px;
  }
 
  .section-title {
@@ -1878,4 +1879,9 @@
 
  .theme-btn:hover i {
      transform: rotate(20deg);
+ }
+
+ /* lighttheme.css */
+ .theme-btn {
+     color: #333333 !important;
  }

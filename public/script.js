@@ -14,7 +14,7 @@ AOS.init({ duration: 800, once: true });
 
     const desktopItems = Array.from(document.querySelectorAll('.desktop-item'));
     const materialsCards = document.getElementById('materialsCards');
-    
+
     // CATEGORY DATA
     const categories = [
         { key: 'steel', icon: '🔩', title: 'Reinforced Steel', desc: 'Steel bars, meshes & commercial steel' },
@@ -437,7 +437,7 @@ AOS.init({ duration: 800, once: true });
         });
 
         return sec;
-    }    
+    }
 
     function renderAll() {
         sectionsRoot.innerHTML = "";
@@ -741,43 +741,74 @@ AOS.init({ duration: 800, once: true });
     setInterval(autoSlide, 4800);
 
     // Catalog Modal Logic
-const catalogBtn = document.getElementById("catalogBtn");
-const mobileCatalogBtn = document.getElementById("mobileCatalogBtn");
-const catalogModal = document.getElementById("catalogModal");
-const catalogClose = document.getElementById("catalogClose");
+    const catalogBtn = document.getElementById("catalogBtn");
+    const mobileCatalogBtn = document.getElementById("mobileCatalogBtn");
+    const catalogModal = document.getElementById("catalogModal");
+    const catalogClose = document.getElementById("catalogClose");
 
-// Open modal
-function openCatalog() {
-    catalogModal.style.display = "flex";
-}
-
-// Close modal
-function closeCatalog() {
-    catalogModal.style.display = "none";
-}
-
-// Desktop click
-if (catalogBtn) catalogBtn.addEventListener("click", openCatalog);
-
-// Mobile click
-if (mobileCatalogBtn) mobileCatalogBtn.addEventListener("click", openCatalog);
-
-// Close button
-catalogClose.addEventListener("click", closeCatalog);
-
-// Close if clicking outside frame
-catalogModal.addEventListener("click", function(e) {
-    if (e.target === catalogModal) closeCatalog();
-});
-
-document.addEventListener("click", function (e) {
-    if (e.target.classList.contains("close-modal") || e.target.classList.contains("modal")) {
-        closeCatalogModal();
+    // Open modal
+    function openCatalog() {
+        catalogModal.style.display = "flex";
     }
-});
 
-function closeCatalogModal() {
-    document.getElementById("catalogModal").style.display = "none";
-}
+    // Close modal
+    function closeCatalog() {
+        catalogModal.style.display = "none";
+    }
+
+    // Desktop click
+    if (catalogBtn) catalogBtn.addEventListener("click", openCatalog);
+
+    // Mobile click
+    if (mobileCatalogBtn) mobileCatalogBtn.addEventListener("click", openCatalog);
+
+    // Close button
+    catalogClose.addEventListener("click", closeCatalog);
+
+    // Close if clicking outside frame
+    catalogModal.addEventListener("click", function (e) {
+        if (e.target === catalogModal) closeCatalog();
+    });
+
+    document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("close-modal") || e.target.classList.contains("modal")) {
+            closeCatalogModal();
+        }
+    });
+
+    function closeCatalogModal() {
+        document.getElementById("catalogModal").style.display = "none";
+    }
 
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeLink = document.getElementById("themeStylesheet");
+    const themeToggle = document.getElementById("themeToggle");
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("site-theme");
+
+    if (savedTheme === "light") {
+        themeLink.href = "lighttheme.css";
+        themeToggle.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+    } else {
+        themeLink.href = "styles.css";
+        themeToggle.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+    }
+
+    // Toggle theme on click
+    themeToggle.addEventListener("click", () => {
+        if (themeLink.href.includes("styles.css")) {
+            // Switch to light theme
+            themeLink.href = "lighttheme.css";
+            localStorage.setItem("site-theme", "light");
+            themeToggle.innerHTML = `<i class="fa-solid fa-sun"></i>`;
+        } else {
+            // Switch to dark theme
+            themeLink.href = "styles.css";
+            localStorage.setItem("site-theme", "dark");
+            themeToggle.innerHTML = `<i class="fa-solid fa-moon"></i>`;
+        }
+    });
+});

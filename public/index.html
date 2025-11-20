@@ -11,7 +11,7 @@
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link id="themeStylesheet" rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -82,10 +82,15 @@
             <a href="#contact"><i class="fa-solid fa-headset"></i> Contact</a>
             <a href="#" id="requestQuoteBtn"><i class="fa-solid fa-envelope"></i> Request Quote</a>
         </nav>
+        <div class="nav-actions">
+            <button id="themeToggle" class="theme-btn" aria-label="Change theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
 
-        <button id="hamburger" aria-label="Open mobile menu">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+            <button id="hamburger" aria-label="Open mobile menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
@@ -110,7 +115,7 @@
             <p>Created by HR Info</p>
         </div>
     </nav>
-
+    
     <!-- mobile overlay (Apple-style) -->
     <div id="materialsOverlay" aria-hidden="true">
         <div class="overlay-header">
@@ -163,7 +168,6 @@
 
         <div class="slider-dots" id="sliderDots"></div>
     </section>
-
 
     <!-- ABOUT US SECTION -->
     <section class="section about-us" id="about" aria-labelledby="aboutTitle" style="margin-top: 20px;">
@@ -225,6 +229,7 @@
             <button id="requestQuoteMPBtn" class="btn-cta">Request a Quote</button>
         </div>
     </section>
+
     <!-- Materials list (masonry) -->
     <section class="section about-us" id="materials" aria-labelledby="aboutTitle" style="margin-top: 20px;">
         <h2 id="materialsTitle" class="fancy-section-title">
@@ -241,38 +246,33 @@
     </section>
 
     <!-- Catalog Modal -->
-<div id="catalogModal" class="catalog-modal" aria-hidden="true">
-    <div class="catalog-modal-content">
+    <div id="catalogModal" class="catalog-modal" aria-hidden="true">
+        <div class="catalog-modal-content">
 
-        <!-- Close Button -->
-        <button class="catalog-close" id="catalogClose">✕</button>
+            <!-- Close Button -->
+            <button class="catalog-close" id="catalogClose">✕</button>
 
-        <!-- Title -->
-        <h2 class="catalog-title">Plywood Catalog</h2>
+            <!-- Title -->
+            <h2 class="catalog-title">Plywood Catalog</h2>
 
-        <!-- Image Wrapper -->
-        <div class="catalog-image-wrapper">
-            <img id="catalogImage"
-                 src="images/plywood-catalog.jpg"
-                 alt="Plywood Catalog">
+            <!-- Image Wrapper -->
+            <div class="catalog-image-wrapper">
+                <img id="catalogImage" src="images/plywood-catalog.jpg" alt="Plywood Catalog">
+            </div>
+
+            <!-- Bottom Buttons -->
+            <div class="catalog-actions">
+                <a id="viewFullBtn" href="images/plywood-catalog.jpg" target="_blank" class="view-btn">
+                    <i class="fa-solid fa-eye"></i> View Full Size
+                </a>
+
+                <a id="downloadBtn" href="catalogs/plywood-catalog.pdf" download class="download-btn">
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+            </div>
+
         </div>
-
-        <!-- Bottom Buttons -->
-        <div class="catalog-actions">
-            <a id="viewFullBtn" href="images/plywood-catalog.jpg" target="_blank" class="view-btn">
-                <i class="fa-solid fa-eye"></i> View Full Size
-            </a>
-
-            <a id="downloadBtn" href="catalogs/plywood-catalog.pdf" download class="download-btn">
-                <i class="fa-solid fa-download"></i> Download PDF
-            </a>
-        </div>
-
     </div>
-</div>
-
-
-
 
     <!-- ======= Services Overview Section ======= -->
     <section id="services-overview" class="services-overview">
@@ -364,10 +364,9 @@
                 <!-- Google Map -->
                 <div class="contact-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.373785734509!2d50.5801922!3d26.1832575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49aafdd1fa4e1f%3A0x123456789abcdef!2sPalmera%20General%20Trading!5e0!3m2!1sen!2sbh!4v1700000000000!5m2!1sen!2sbh"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3581.7284930747733!2d50.57569117541302!3d26.140394177115986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDA4JzI1LjQiTiA1MMKwMzQnNDEuOCJF!5e0!3m2!1sen!2sbh!4v1763621879691!5m2!1sen!2sbh"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -441,5 +440,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
